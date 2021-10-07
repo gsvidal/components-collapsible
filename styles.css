@@ -1,0 +1,70 @@
+:root {
+  --html: rgb(255, 175, 161);
+  --html-light: rgb(255, 231, 226);
+  --css: rgb(175, 198, 255);
+  --css-light: rgb(225, 233, 255);
+  --js: rgb(255, 244, 200);
+  --js-light: rgb(255, 251, 236);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Lato', sans-serif;
+}
+.html-topic {
+  background-color: var(--html)
+}
+.html-topic-content {
+  background-color: var(--html-light)
+}
+.css-topic {
+  background-color: var(--css)
+}
+.css-topic-content {
+  background-color: var(--css-light)
+}
+.js-topic {
+  background-color: var(--js)
+}
+.js-topic-content {
+  background-color: var(--js-light)
+}
+.title {
+  margin: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.collapsible__container {
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0px 0px 6px 1px rgb(186, 186, 186);
+}
+.collapsible__item {
+  width: 300px;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(232, 232, 232);
+}
+.collapsible__item:active {
+  background-color: rgb(233, 233, 233);
+}
+.collapsible__item p {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.collapsible__content {
+  width: 300px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease-in;
+}
+.collapsible__content p {
+  margin: 20px;
+  text-align: left;
+  line-height: 35px;
+}
+
